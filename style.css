@@ -1,0 +1,232 @@
+body{
+  margin:0px;
+  padding:0px;
+  background-color:  rgb(182, 179, 179);
+}
+.container-fluid{
+  background-color: darkgrey;
+  height: 590px;
+  width: 100%;
+  background-image: url("images/wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  margin-top:-30px;
+}
+
+#bar{ padding-top: 10px;}
+#banner{ background-color: black; color: white; display:block;
+   }
+.box{ display: block;   padding: 40px;
+  margin-top: 30px; margin-bottom: 30px;}
+.box p{
+  font-size:38px;
+  font-weight:bolder;
+  color:black;
+}
+.links p{
+  float: center;
+  background-color:grey;
+  font-size:38px;
+  font-weight:bolder;
+  color:black; text-align:center;
+  width:48%;
+  margin: auto; padding: 10px; background-color :rgba(240, 240, 240, 240);
+  border: 1px solid white; 
+}
+h1
+{
+    font-weight: 600;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.button a
+{
+    text-decoration: none;
+    color:black;
+    font-weight: 800;
+    text-transform:uppercase; text-align: center;
+}
+a:hover{
+    color:grey;
+}
+.text{ text-align:center; padding:8px; font-weight: bold; font-size:24px;}
+.container
+{
+    display: flexbox;
+    position: relative;
+    flex-direction: column;
+    margin: auto;
+    padding: 50px;
+    color: #fff;
+}
+
+.container select
+{
+    font-size: 20px;
+    border-radius: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+    border: 2px solid white;
+}
+.button {
+    padding: 8px;
+    max-width:20% ;
+    max-height: auto;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color :rgba(240, 240, 240, 240);
+    border: 1px solid white;  color:black;
+    text-align:center;
+
+}
+
+
+.button:hover{
+   border-radius: 20px; 
+}
+  
+@media only screen and (max-width:500px){
+
+    *{
+      font-size: 10px;
+    }
+    #navbar
+    {
+        padding: 20px;
+        padding-right: 30px;
+    }
+    .nav
+    {
+        font-size: 30px;
+    }
+}
+.middle
+{
+  position:absolute;
+  width:96%;
+  margin: auto;
+  padding-top: 7%;
+  padding-left: 1%;
+  text-align: center;
+}
+.btn
+{
+  display: inline-block;
+  width:60px;
+  height:60px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color:#3498db;
+  overflow:hidden;
+  position:relative;
+}
+.middle h1
+{
+    font-size: 12px;
+    font-weight: 900;
+    color:black;
+}
+.btn i
+{
+  line-height: 60px;
+  font-size: 20px;
+  transition: 0.2s linear;
+}
+.btn:hover i
+{
+  transform: scale(1.3);
+  color:#f1f1f1;
+}
+
+.btn::before
+{
+  content: "";
+  position: absolute;
+  width:120%;
+  height: 120%;
+  background:#3498db;
+  transform:rotate(45deg);
+  left:-110%;
+  top:90%;
+}
+.btn:hover::before
+{
+  animation :aaa 0.7s 1;
+  top:-10%;
+  left: -10%;
+}
+@keyframes aaa {
+0%{
+  left: -110%;
+  top:90%;
+}
+50%{
+  left:10%;
+  top:-30%;
+}
+100%{
+  top:-10%;
+  left: -10%;
+}
+}
+.u-info-head
+{
+    color:black;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  
+}
+
+.table-info
+{
+    font-size: 17px;
+    color: black;
+    padding-top: 30px;
+    display: flexbox;
+    padding:2% 5px;
+    margin: auto;
+   
+    border-radius: 15px;
+    width:700px;
+
+}
+.table-info thead
+{
+    color:black;
+    padding: 10px;
+    font-size: 25px;
+}
+.table-info  td
+{
+    padding: 6px 8px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-left: 4%;
+}
+
+.u-info-head input
+{
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color:white;
+    color:black;
+}
+  
+.u-info-head .name_select
+{
+  font-weight: 600;
+  font-size: 20px;
+  color:black;
+}
